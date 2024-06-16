@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    padding: 0;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+.container {
+    margin: auto;
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 80px;
+    height: 40px;
+}
+
+.navbar ul {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        font-size: .8em;
+    }
+}
+
+.navbar ul li:hover {
+    color: rgb(246, 5, 97);
+}
+
+a {
+    color: white;
+    padding: 10px;
+}

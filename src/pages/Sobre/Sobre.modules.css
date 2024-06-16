@@ -1,0 +1,266 @@
+.section-container-sob {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.main-cont {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre-mim {
+    width: 35%;
+}
+
+.sobre-mim h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+@media (max-width: 768px) {
+    .sobre-mim h1 {
+        font-size: 2em;
+    }
+}
+
+.sobre-mim h2 {
+    color: rgb(243, 0, 69);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .sobre-mim h2 {
+        font-size: 1.2em;
+    }
+}
+
+.perfil-s {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: rgb(40, 40, 40);
+    background-image: url(../../assets/img-perfil.png);
+    border-width: 3px;
+    border-color: rgb(243, 0, 69);
+}
+
+@media (max-width: 768px) {
+    .perfil-s {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: rgb(40, 40, 40);
+        background-image: url(../../assets/img-perfil2.png);
+        border-width: 3px;
+        border-color: rgb(255, 0, 72);
+    }
+}
+
+.perfil-s:hover {
+    background-color: rgb(243, 0, 69);
+}
+
+/* EDUCAÇÃO */
+
+/* Formação Acadêmica */
+
+.educacao {
+    margin: 0;
+    padding: 80px;
+    list-style: none;
+    box-sizing: border-box;
+    /* background-color: rgb(38, 38, 38); */
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+}
+
+.educacao .titulo {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.educacao .titulo h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+.educacao .titulo h2 {
+    color: rgb(243, 0, 69);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.educacao .card {
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    border-radius: 15px;
+    /* background-color: rgb(40, 40, 40); */
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 30%);
+    box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card .formacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition-duration: .5s !important;
+}
+
+.card-formacao:after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card .formacao:hover {
+    transform:scale(1.100,1.100);
+    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
+    border-radius: 10px;
+}
+
+.formacao .img-card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.formacao .info-card {
+    /* background-color: rgb(66, 66, 66); */
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+    width: 60%;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card .titulo-card {
+    width: 100%;
+    margin: 5%;
+}
+
+.info-card .titulo-card h3 {
+    font-size: 1.2em;
+    padding: 3%;
+    background-color: black;
+    color: rgb(243, 0, 69);
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info-card .dados-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card .dados-card p {
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+/* Certificações */
+
+.container-cards-cert {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cert {
+    /* padding: 25px; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.card-cert {
+    /* margin: auto; */
+    /* margin-top: 50px; */
+    width: 265px;
+    height: 230px;
+    /* width: 60%; */
+    /* height: 50%; */
+    border-radius: 28px;
+    /* background-color: rgb(47, 47, 47); */
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+    box-shadow: 0px 0px 8px 3px rgb(108, 108, 108);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s !important;
+}
+
+.card-cert:after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-cert:hover {
+    transform:scale(1.100,1.100);
+    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
+}
+
+.card-cert .img-cert {
+    width: 50%;
+    height: 50%;
+    
+}
+
+.card-cert img {
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.card-cert p {
+    text-align: center;
+    padding: 20px;
+}
